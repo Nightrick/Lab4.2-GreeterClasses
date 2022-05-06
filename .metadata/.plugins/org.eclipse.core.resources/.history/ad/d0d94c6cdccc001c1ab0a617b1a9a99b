@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class GreeterApp {
+
+	public static void main(String[] args) {
+		
+		String greeting;
+		String name;
+		
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.print("Hello there. Please enter your preferred greeting: ");
+		greeting = scnr.nextLine();
+		System.out.println("Thank you. Now enter your name: ");
+		name = scnr.next(); 
+		
+		Greeter firstGreeter = new Greeter(greeting);
+		System.out.println(firstGreeter.greet(name));
+	}
+
+}

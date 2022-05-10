@@ -27,7 +27,7 @@ public class GreeterApp {
 		thirdGreeter.addVolume();
 		System.out.println(thirdGreeter.greet(name));
 		
-		HtmlGreeter fourthGreeter = new HtmlGreeter(greeting, htmlTag);
+		HtmlGreeter fourthGreeter = new HtmlGreeter(greeting);
 		System.out.println(fourthGreeter.greet(name));
 		
 	}

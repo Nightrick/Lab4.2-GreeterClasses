@@ -34,35 +34,5 @@ class GreeterTests {
 		SimonGreeter greet1 = new SimonGreeter("Hello there");
 		assertEquals("Simon Says, \"Hello there, Franklin!\"", greet1.greet("Franklin"));
 	}
-	
-	@Test
-	void testLoudGreeterAddVolume1() {
-		LoudGreeter greet1 = new LoudGreeter("Hi");
-		greet1.addVolume();
-		assertEquals("Hi, John!!!", greet1.greet("John"));
-	}
-	
-	@Test
-	void testLoudGreeterAddVolume2() {
-		LoudGreeter greet1 = new LoudGreeter("Hi");
-		greet1.addVolume();
-		greet1.addVolume();
-		greet1.addVolume();
-		greet1.addVolume();
-		assertEquals("Hi, John!!!!!!", greet1.greet("John"));
-	}
-	
-	@Test
-	void testHtmlGreeterConstructor1() {
-		HtmlGreeter greet1 = new HtmlGreeter("Hello there");
-		assertEquals("<h1>Hello there, Franklin!<h1>", greet1.greet("Franklin"));
-	}
-	
-	@Test
-	void testHtmlGreeterConstructor2() {
-		HtmlGreeter greet1 = new HtmlGreeter("Hello there", "a");
-		assertEquals("<a>Hello there, Franklin!<a>", greet1.greet("Franklin"));
-	}
-	
 
 }

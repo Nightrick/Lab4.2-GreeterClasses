@@ -6,7 +6,6 @@ public class GreeterApp {
 		
 		String greeting;
 		String name;
-		String htmlTag;
 		
 		Scanner scnr = new Scanner(System.in);
 		
@@ -14,8 +13,6 @@ public class GreeterApp {
 		greeting = scnr.nextLine();
 		System.out.print("Thank you. Now enter your name: ");
 		name = scnr.next(); 
-		System.out.print("Now enter an html tag you'd like to use: ");
-		htmlTag = scnr.next();
 		
 		Greeter firstGreeter = new Greeter(greeting);
 		System.out.println(firstGreeter.greet(name));
@@ -24,10 +21,9 @@ public class GreeterApp {
 		System.out.println(secondGreeter.greet(name));
 		
 		LoudGreeter thirdGreeter = new LoudGreeter(greeting);
-		thirdGreeter.addVolume();
 		System.out.println(thirdGreeter.greet(name));
 		
-		HtmlGreeter fourthGreeter = new HtmlGreeter(greeting, htmlTag);
+		HtmlGreeter fourthGreeter = new HtmlGreeter(greeting);
 		System.out.println(fourthGreeter.greet(name));
 		
 	}

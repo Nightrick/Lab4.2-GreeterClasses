@@ -1,0 +1,9 @@
+
+public class HtmlGreeter extends Greeter {
+
+	public HtmlGreeter(String greeting) {
+		super(greeting);
+		
+	}
+
+}

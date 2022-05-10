@@ -1,0 +1,8 @@
+
+public class LoudGreeter extends Greeter {
+
+	public LoudGreeter(String greeting) {
+		super(greeting);
+	}
+
+}

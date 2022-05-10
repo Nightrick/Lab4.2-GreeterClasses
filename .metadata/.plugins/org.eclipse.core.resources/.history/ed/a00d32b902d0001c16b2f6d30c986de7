@@ -60,8 +60,8 @@ class GreeterTests {
 	
 	@Test
 	void testHtmlGreeterConstructor2() {
-		HtmlGreeter greet1 = new HtmlGreeter("Hello there", "a");
-		assertEquals("<a>Hello there, Franklin!<a>", greet1.greet("Franklin"));
+		HtmlGreeter greet1 = new HtmlGreeter("Hello there", "d1");
+		assertEquals("<d1>Hello there, Franklin!<d1>", greet1.greet("Franklin"));
 	}
 	
 

@@ -58,11 +58,5 @@ class GreeterTests {
 		assertEquals("<h1>Hello there, Franklin!<h1>", greet1.greet("Franklin"));
 	}
 	
-	@Test
-	void testHtmlGreeterConstructor2() {
-		HtmlGreeter greet1 = new HtmlGreeter("Hello there", "a");
-		assertEquals("<a>Hello there, Franklin!<a>", greet1.greet("Franklin"));
-	}
-	
 
 }

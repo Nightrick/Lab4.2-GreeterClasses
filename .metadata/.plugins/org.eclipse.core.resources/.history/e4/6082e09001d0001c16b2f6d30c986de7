@@ -1,0 +1,38 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GreeterTests {
+
+	@Test
+	void testGreetingSetFromParameter() {
+		Greeter greet1 = new Greeter("Hi");
+		assertEquals("Hi", greet1.getGreeting());
+	}
+	
+	@Test
+	void testGreetMethod() {
+		Greeter greet1 = new Greeter("Hi");
+		assertEquals("Hi, John!", greet1.greet("John"));
+	}
+	
+	@Test
+	void testGreeterSetter() {
+		Greeter greet1 = new Greeter("Hi");
+		greet1.setGreeting("Bye");
+		assertEquals("Bye", greet1.getGreeting());
+	}
+	
+	@Test
+	void testSimonGreeterGreeting1() {
+		SimonGreeter greet1 = new SimonGreeter("Hi");
+		assertEquals("Simon Says, \"Hi, John\"", greet1.greet("John"));
+	}
+	
+	@Test
+	void testSimonGreeterGreeting2() {
+		SimonGreeter greet1 = new SimonGreeter("Hello there");
+		assertEquals("Simon Says, \"Hi, John\"", greet1.greet("Franklin"));
+	}
+
+}
